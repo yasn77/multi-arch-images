@@ -26,3 +26,5 @@ RUN set -eux; \
 FROM gcr.io/distroless/static:nonroot
 
 COPY --from=builder /envoy /envoy
+
+# test
