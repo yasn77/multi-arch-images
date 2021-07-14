@@ -51,7 +51,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            raspbernetes/cloudflared:${{ github.sha }}
+            yasn77/cloudflared:${{ github.sha }}
 
       - name: Build and Push
         if: github.ref == 'refs/heads/master'
@@ -63,5 +63,5 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            raspbernetes/cloudflared:latest
-            raspbernetes/cloudflared:${{ steps.prep.outputs.version }}
+            yasn77/cloudflared:latest
+            yasn77/cloudflared:${{ steps.prep.outputs.version }}
