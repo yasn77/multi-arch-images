@@ -52,6 +52,8 @@ jobs:
           push: true
           tags: |
             yasn77/cloudflared:${{ github.sha }}
+            yasn77/cloudflared:latest
+            yasn77/cloudflared:${{ steps.prep.outputs.version }}
 
       - name: Build and Push
         if: github.ref == 'refs/heads/master'
